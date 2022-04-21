@@ -859,6 +859,7 @@ th {
   padding: 0;
 }
 
+
 * {
   margin: 0;
   padding: 0;
@@ -1347,7 +1348,6 @@ body {
 
 .image1 {
   position: absolute;
-  top: 0;
   width: 470px;
   height: 470px;
   left: -12%;
@@ -1478,9 +1478,8 @@ body {
 
 @media (max-width: 700px) {
   .block1 {
-    width: 355px;
-    height: 75px;
-    margin-left: -1.5vh;
+    width: 100%;
+    margin-left: 1%;
   }
 }
 
@@ -1499,8 +1498,8 @@ body {
 
 @media (max-width: 700px) {
   .block1 p {
-    font-size: 16px;
-    padding-top: 10px;
+    font-size: x-large;
+    padding-top: 1.4vh;
   }
 }
 
@@ -1517,8 +1516,10 @@ body {
 
 /*---------------Cart 1---------------*/
 .cart1 {
-  width: 280px;
-  height: 540px;
+  max-width: 280px;
+  min-width: 250px;
+  max-height: 540px;
+  min-height: 480px;
   background: linear-gradient(147.24deg, #4AFFDE 1.98%, rgba(208, 107, 255, 0.494792) 62.22%, rgba(255, 52, 210, 0) 100%) padding-box, linear-gradient(211.9deg, #2A2A34 0%, rgba(116, 120, 219, 0.894712) 20.31%, rgba(59, 55, 225, 0.799695) 40.62%, rgba(97, 36, 226, 0.647949) 60.42%, rgba(189, 57, 160, 0.453125) 83.33%, rgba(254, 2, 199, 0) 100%) border-box;
   border-width: 2px;
   border-style: solid;
@@ -1527,9 +1528,17 @@ body {
   text-align: center;
 }
 
+@media (max-width: 700px) {
+  .cart1 {
+    margin-left: 2vh;
+  }
+}
+
 .cart1 .syringe {
-  width: 140px;
-  height: 140px;
+  max-width: 140px;
+  min-width: 100px;
+  max-height: 140px;
+  min-height: 100px;
   display: block;
   margin: 45px 56px;
 }
@@ -1543,15 +1552,16 @@ body {
 
 .cart1 p {
   margin-top: -13px;
-  width: 240px;
-  margin-left: 20px;
-  font-size: 20px;
+  width: 250px;
+  margin-left: 15px;
+  font-family: 'Roboto';
+  font-size: x-large;
   line-height: 25px;
 }
 
 /*---------Button cart1---------*/
 .but21 {
-  margin: 60px auto;
+  margin: 33px auto;
   width: 190px;
   height: 45px;
   display: -webkit-box;
@@ -1567,6 +1577,12 @@ body {
           box-shadow: -3px 3px 4px 0px #00000080;
   border-radius: 50px;
   background: linear-gradient(92.44deg, #F178B6 -1.12%, rgba(88, 96, 204, 0.77) 104.22%);
+}
+
+@media (max-width: 700px) {
+  .but21 {
+    margin: 20px auto;
+  }
 }
 
 .external1 {
@@ -2260,6 +2276,12 @@ textarea {
   }
 }
 
+@media (min-width: 701px) and (max-width: 999px) {
+  .foo_nav {
+    display: none;
+  }
+}
+
 .foo_navlinks {
   list-style-type: none;
   display: -webkit-box;
@@ -2278,12 +2300,6 @@ textarea {
   display: inline-block;
   border-right: 0px solid #bbb;
   height: 30px;
-}
-
-ul {
-  padding: 5px;
-  height: 30px;
-  background-image: url(../images/navdiv.png) no-repeat;
 }
 
 .f_navlink {
@@ -2313,12 +2329,12 @@ ul {
 
 .foo_navlinks:after {
   content: "";
-  position: absolute;
+  position: relative;
   background-color: #fff;
   width: 1px;
   height: 23px;
-  top: 5%;
-  right: 26.2%;
+  margin-top: 5px;
+  right: 0;
   z-index: 100;
 }
 
@@ -2369,6 +2385,12 @@ ul {
   text-shadow: -6px 5px 4px rgba(0, 0, 0, 0.25);
 }
 
+@media (max-width: 700px) {
+  .foo1 p {
+    margin-left: 14vh;
+  }
+}
+
 .foo1 p:after {
   position: absolute;
   left: 25px;
@@ -2377,6 +2399,12 @@ ul {
   width: 160px;
   height: 2px;
   background-color: #41AFC8;
+}
+
+@media (max-width: 700px) {
+  .foo1 p:after {
+    left: 18vh;
+  }
 }
 
 .cont_icons {
@@ -2444,9 +2472,21 @@ ul {
 }
 
 /*----------Foo 3----------*/
+@media (max-width: 700px) {
+  .foo3 {
+    margin-left: 13vh;
+  }
+}
+
 .foo3 p {
   font-size: 25px;
   margin-left: 15px;
+}
+
+@media (max-width: 700px) {
+  .foo3 p {
+    margin-left: 40px;
+  }
 }
 
 .cont44 {
