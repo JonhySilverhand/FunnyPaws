@@ -9,7 +9,7 @@
 body {
   background-color: #457fa7;
   overflow-x: hidden;
-  background-image: url(/images/vaccin_bg.png);
+  background-image: url(../images/vaccin_bg.png);
 }
 
 body::-webkit-scrollbar {
@@ -394,8 +394,10 @@ body::-webkit-scrollbar-track {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
-  -webkit-transition: color 0.3s ease 0s, left 0.3s ease 0s;
-  transition: color 0.3s ease 0s, left 0.3s ease 0s;
+  -webkit-transition: color 0.3s ease 0s,
+ left 0.3s ease 0s;
+  transition: color 0.3s ease 0s,
+ left 0.3s ease 0s;
 }
 
 @media (max-width: 1200px) {
@@ -831,7 +833,7 @@ h1 {
 
 /*----------------- Footer  -----------------*/
 .footer {
-  background-image: url(/images/backfoto.png);
+  background-image: url(../images/backfoto.png);
   background-color: #737373;
   position: absolute;
   width: 100%;
@@ -1054,7 +1056,7 @@ h1 {
 }
 
 .li1 {
-  list-style-image: url(/icons/gmail_log11.png);
+  list-style-image: url(../icons/gmail_log11.png);
   font-family: "Montserrat";
   font-size: calc(13px + 15 * (100vw / 1920));
 }
@@ -1066,7 +1068,7 @@ h1 {
 
 .li2 {
   font-family: "Montserrat";
-  list-style-image: url(/icons/map-point1.png);
+  list-style-image: url(../icons/map-point1.png);
   font-size: calc(13px + 15 * (100vw / 1920));
   color: #fff;
 }
